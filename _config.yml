@@ -17,3 +17,9 @@ nav:
     url: /projects
   - title: Sponsors
     url: /sponsors
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .gitignore
