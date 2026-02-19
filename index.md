@@ -26,20 +26,20 @@ stats:
 
 # Team members list — add/remove as needed
 team:
-  - name:  Sanketh B
-    role:  Team Lead
-  - name:  Sumukha Kashyap
-    role:  Structure Lead
-  - name:  Praneeth Mahantesh
-    role:  Thermal Lead
-  - name:  Samudyatha Iyengar
-    role:  RF Lead
-  - name:  Shweta K
-    role:  Payload Lead
-  - name:  Samrudhee H
-    role:  Design Lead
-  - name:  Yeshaswini M
-    role:  Management Lead
+  - name: Sanketh B
+    role: Team Lead
+  - name: Sumukha Kashyap
+    role: Structure Lead
+  - name: Praneeth Mahantesh
+    role: Thermal Lead
+  - name: Samudyatha Iyengar
+    role: RF Lead
+  - name: Shweta K
+    role: Payload Lead
+  - name: Samrudhee H
+    role: Design Lead
+  - name: Yeshaswini M
+    role: Management Lead
   - name: Keshav Bajpai
     role: Mentor
   - name: Faizal Iliyas
