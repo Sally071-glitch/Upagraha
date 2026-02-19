@@ -1,7 +1,7 @@
 title: Upagraha
 description: Space & Technology Club
-baseurl: ""
-url: ""
+baseurl: "/Upagraha"
+url: "https://sally071-glitch.github.io"
 
 # Build settings
 markdown: kramdown
