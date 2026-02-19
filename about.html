@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <p class="hero-eyebrow">Who we are</p>
+  <h1 class="hero-title">We are<br><span class="highlight">Upagraha</span></h1>
+  <p class="hero-subtitle">{{ page.tagline }}</p>
+</section>
+
+<div class="stats-row reveal">
+  {% for stat in page.stats %}
+  <div class="stat-box">
+    <div class="stat-number">{{ stat.number }}</div>
+    <div class="stat-label">{{ stat.label }}</div>
+  </div>
+  {% endfor %}
+</div>
+
+<section class="section reveal">
+  <div class="section-header">
+    <h2 class="section-title">About Us</h2>
+  </div>
+  <div class="prose">
+    {{ page.description }}
+  </div>
+  {{ content }}
+</section>
+
+<section class="section reveal">
+  <div class="section-header">
+    <h2 class="section-title">The Team</h2>
+    <span class="section-count">{{ page.team | size }} members</span>
+  </div>
+  <div class="team-grid">
+    {% for member in page.team %}
+    <div class="team-card">
+      <div class="team-avatar">{{ member.name | slice: 0 }}</div>
+      <div class="team-name">{{ member.name }}</div>
+      <div class="team-role">{{ member.role }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

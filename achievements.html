@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<section class="hero" style="min-height:35vh">
+  <p class="hero-eyebrow">Our milestones</p>
+  <h1 class="hero-title"><span class="highlight">Achievements</span></h1>
+  <p class="hero-subtitle">A record of what we've built, won, and launched.</p>
+</section>
+
+<section class="section">
+  <div class="achievement-list">
+    {% for item in page.achievements %}
+    <div class="achievement-item reveal">
+      <div class="achievement-icon">{{ item.icon }}</div>
+      <div class="achievement-info">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.description }}</p>
+        <div class="card-meta">{{ item.event }}</div>
+      </div>
+      <div class="achievement-year">{{ item.year }}</div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

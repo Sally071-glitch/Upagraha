@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<section class="hero" style="min-height:35vh">
+  <p class="hero-eyebrow">What we build</p>
+  <h1 class="hero-title"><span class="highlight">Projects</span></h1>
+  <p class="hero-subtitle">From concept to launch — our active and completed missions.</p>
+</section>
+
+<section class="section">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+  </div>
+
+  <div class="card-grid">
+    {% for project in page.projects %}
+    <div class="card project-card reveal" data-status="{{ project.status }}">
+      <span class="card-tag {{ project.status }}">{{ project.status }}</span>
+      <h3>{{ project.name }}</h3>
+      <p>{{ project.description }}</p>
+      <div class="card-meta">
+        <span>👥 {{ project.team_size }} members</span>
+        <span>📅 {{ project.started }}{% if project.ended %} → {{ project.ended }}{% endif %}</span>
+      </div>
+      <div class="card-meta" style="border-top:none; padding-top:0.5rem;">
+        {% for tag in project.tags %}
+        <span style="color: var(--purple-300); font-size:0.7rem;">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
